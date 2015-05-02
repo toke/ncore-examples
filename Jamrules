@@ -37,7 +37,7 @@ rule Ino
 
 actions Ino
 {
-  echo "#include <Arduino.h>" > $(<) 
+  echo "#include <arduino.h>" > $(<) 
   echo "#line 1 \"$(>)\"" >> $(<)
   cat $(>) >> $(<) 
 }
